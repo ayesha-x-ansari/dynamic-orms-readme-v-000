@@ -60,5 +60,5 @@ class Song
   end
 
 end
-puts Song.new("Molly", "dddddddd")
+puts Song.new
 puts Song.column_names
