@@ -54,7 +54,7 @@ class Song
 
     self.class.column_names.delete_if {|col| col == "id"}.join(", ")
     puts "in insert"
-    puts column_name
+    puts column_names
   end
 
   def self.find_by_name(name)
