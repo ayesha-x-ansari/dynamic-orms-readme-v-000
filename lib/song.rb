@@ -14,9 +14,9 @@ class Song
     sql = "pragma table_info('#{table_name}')"
     puts sql
 
-    table_inf = DB[:conn].execute(sql)
+    table_in = DB[:conn].execute(sql)
     column_names = []
-    table_inf.each do |row|
+    table_in.each do |row|
       column_names << row["name"]
     end
     column_names.compact
