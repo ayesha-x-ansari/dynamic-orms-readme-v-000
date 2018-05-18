@@ -60,5 +60,5 @@ class Song
   end
 
 end
-puts Song.table_name
+puts Song.new("Molly", "dddddddd")
 puts Song.column_names
