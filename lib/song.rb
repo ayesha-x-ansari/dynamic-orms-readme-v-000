@@ -12,6 +12,7 @@ class Song
     DB[:conn].results_as_hash = true
 
     sql = "pragma table_info('#{table_name}')"
+    puts sql
 
     table_info = DB[:conn].execute(sql)
     column_names = []
@@ -60,3 +61,4 @@ class Song
 
 end
 puts Song.table_name
+puts self.column_names
