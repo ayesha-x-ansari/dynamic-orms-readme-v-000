@@ -59,4 +59,4 @@ class Song
   end
 
 end
-Song.table_name
+puts Song.table_name
