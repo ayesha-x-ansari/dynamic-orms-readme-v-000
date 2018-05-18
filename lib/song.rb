@@ -61,7 +61,7 @@ class Song
 
 end
 s = Song.new
-s.name  = "Molly"
-s.album = "album"
+s.name  = "Molly1"
+s.album = "album1"
 s.save
 puts Song.column_names
