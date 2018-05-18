@@ -51,11 +51,11 @@ class Song
   end
 
   def col_names_for_insert
-    self.class.column_names.delete_if {|col| col == "id"}.join(", ")
-  end
 
-  puts "in insert"
-  puts column_names
+    self.class.column_names.delete_if {|col| col == "id"}.join(", ")
+    puts "in insert"
+    puts column_name
+  end
 
   def self.find_by_name(name)
     sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
