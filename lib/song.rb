@@ -63,4 +63,4 @@ class Song
 
 end
 puts Song.table_name
-puts self.column_names
+puts Song.column_names
