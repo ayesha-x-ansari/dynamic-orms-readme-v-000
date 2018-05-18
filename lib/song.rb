@@ -60,5 +60,3 @@ class Song
 
 end
 Song.table_name
-
-
